@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
 :root {
   --primary-white: #fff;
+  --primary-red: #ef4035;
+  --primary-hover-red: #f33501;
   --primary-orange: #f9ab00;
   --primary-dark: rgba(255, 255, 255, 0);
 }
@@ -9,6 +11,9 @@ body {
   font-family: " Roboto", sans-serif;
 }
 /* ***********************  NAVBAR  **************** */
+nav {
+  z-index: 2;
+}
 .logo {
   width: 5rem;
 }
@@ -35,6 +40,12 @@ nav ul li {
   height: 6rem;
 }
 
+@media (max-width: 768px) {
+  .navbar-brand {
+    width: 7rem;
+  }
+}
+
 .navbar-nav > li > a.active,
 .navbar-nav > li > a.active:focus {
   border-top: 0.1875rem solid var(--primary-orange);
@@ -55,16 +66,28 @@ nav ul li {
 
 .main-info {
   display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
+  z-index: 1;
 }
 
 .main-info h1 {
   color: var(--primary-orange);
   text-transform: uppercase;
-  background-color: rgba(14, 2, 2, 0);
+  background-color: rgba(14, 2, 2, 0.3);
+}
+
+@media (max-width: 768px) {
+  .main-info h1 {
+    font-size: 1.5rem;
+  }
 }
 
 /* ***********************  TYPED TEXT  **************** */
@@ -72,4 +95,44 @@ nav ul li {
 .typed-text {
   font-size: 2rem;
   color: var(--primary-white);
+}
+
+@media (max-width: 768px) {
+  .typed-text {
+    font-size: 1.3rem;
+  }
+}
+
+/* ***********************  HEADER MAIN OFFER BUTTON  **************** */
+
+.btn-main-offer {
+  border: 1px solid var(--primary-red);
+  text-transform: uppercase;
+  border-radius: 3px;
+  padding: 0.625rem 0.75rem 0.75rem 0.75rem;
+  text-decoration: none;
+  color: var(--primary-white);
+  background-color: rgba(12, 1, 1, 0.1);
+  margin: 2rem;
+}
+
+.btn-main-offer:hover {
+  text-decoration: none;
+  background-color: var(--primary-hover-red);
+  transition: 0.2s ease-in-out;
+}
+
+/* ***********************  PARTICLES JS **************** */
+
+.tsparticles-canvas-el {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .particles-canvas {
+    display: none;
+  }
 }

@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <div className="header-wraper">
       <div className="main-info">
-        <h1>web development and websites promotions</h1>
+        <h1>web developer fazilet kosure</h1>
         <Typed
           className="typed-text"
           strings={["Web Development", "Web Design", "Search for brands"]}
@@ -13,6 +13,9 @@ const Header = () => {
           backSpeed={50}
           loop
         />
+        <a href="#" className="btn-main-offer">
+          contact me
+        </a>
       </div>
     </div>
   );
