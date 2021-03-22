@@ -6,13 +6,18 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const Services = () => {
   return (
     <div className="services">
+      <h1 className="py-5">my services</h1>
       <div className="py-5">
         <div className="container">
           <div className="row">
             <div className="col-md-3 col-sm-6">
               <div className="box">
                 <div className="circle">
-                  <FontAwesomeIcon icon={faDesktop} size="2x" color="#232F5D" />
+                  <FontAwesomeIcon
+                    icon={faDesktop}
+                    size="2x"
+                    className="icon"
+                  />
                 </div>
                 <h3>Web Design</h3>
                 <p>
@@ -27,7 +32,7 @@ const Services = () => {
                   <FontAwesomeIcon
                     icon={faFileCode}
                     size="2x"
-                    color="#232F5D"
+                    className="icon"
                   />
                 </div>
                 <h3>Web Development</h3>
@@ -42,7 +47,7 @@ const Services = () => {
                   <FontAwesomeIcon
                     icon={faFacebookF}
                     size="2x"
-                    color="#232F5D"
+                    className="icon"
                   />
                 </div>
                 <h3>Facebook Ads SMM</h3>
@@ -55,7 +60,7 @@ const Services = () => {
             <div className="col-md-3 col-sm-6">
               <div className="box">
                 <div className="circle">
-                  <FontAwesomeIcon icon={faGoogle} size="2x" color="#232F5D" />
+                  <FontAwesomeIcon icon={faGoogle} size="2x" className="icon" />
                 </div>
                 <h3>Google Ads</h3>
                 <p>
