@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: " Roboto" sans-serif;
+  font-family: " Roboto", sans-serif;
 }
 /* ***********************  NAVBAR  **************** */
 .logo {
@@ -51,4 +51,25 @@ nav ul li {
   background-size: cover;
   background-position: center;
   height: 90vh;
+}
+
+.main-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.main-info h1 {
+  color: var(--primary-orange);
+  text-transform: uppercase;
+  background-color: rgba(14, 2, 2, 0);
+}
+
+/* ***********************  TYPED TEXT  **************** */
+
+.typed-text {
+  font-size: 2rem;
+  color: var(--primary-white);
 }
