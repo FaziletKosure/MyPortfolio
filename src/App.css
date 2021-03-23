@@ -320,3 +320,25 @@ nav ul li {
 .timeline-content p {
   color: var(--primary-blue);
 }
+
+/*------------ MEDIA ------------------*/
+@media (max-width: 768px) {
+  .experience .container {
+    padding-left: 0;
+  }
+
+  .experience-wrapper::before {
+    left: 0.5rem;
+    margin-bottom: 1.875rem;
+  }
+  .timeline-block-right {
+    float: none;
+    width: 100%;
+  }
+
+  .timeline-block-left {
+    float: none;
+    direction: ltr;
+    width: 100%;
+  }
+}
