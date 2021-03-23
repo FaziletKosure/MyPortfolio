@@ -108,7 +108,8 @@ nav ul li {
 .typed-text {
   font-size: 2rem;
   color: var(--primary-white);
-  font-family: "Lobster", sans-serif !important;
+  /* font-family: "Lobster", sans-serif !important; */
+  margin: 2rem;
 }
 
 @media (max-width: 768px) {
@@ -120,14 +121,16 @@ nav ul li {
 /* ***********************  HEADER MAIN OFFER BUTTON  **************** */
 
 .btn-main-offer {
-  border: 1px solid var(--primary-white);
-  text-transform: uppercase;
+  border: 1px solid var(--primary-blue);
   border-radius: 3px;
-  padding: 0.625rem 0.85rem 0.85rem 0.85rem;
+  text-transform: uppercase;
+  padding: 13px 37px;
   text-decoration: none;
-  color: var(--primary-white);
-  background-color: rgba(12, 1, 1, 0.1);
+  color: var(--primary-blue);
+  background-color: var(--primary-hover-golden);
   margin: 2rem;
+  font-size: 2rem;
+  font-weight: 550;
 }
 
 .btn-main-offer:hover {
@@ -135,6 +138,7 @@ nav ul li {
   background-color: var(--primary-hover-golden);
   transition: 0.2s ease-in-out;
   border-color: var(--primary-hover-golden);
+  background-color: rgba(201, 185, 185, 0.5);
 }
 
 /* ***********************  PARTICLES JS **************** */
@@ -143,7 +147,7 @@ nav ul li {
   position: absolute;
   height: 100vh;
   width: 100vw;
-  z-index: 1;
+  z-index: 2;
 }
 
 @media (max-width: 768px) {
