@@ -74,7 +74,7 @@ nav ul li {
 .main-info {
   display: flex;
   position: absolute;
-  top: 0;
+  top: 0px;
   left: 0;
   bottom: 0;
   right: 0;
@@ -132,7 +132,7 @@ nav ul li {
   background-color: var(--primary-hover-golden);
   margin: 2rem;
   font-size: 2rem;
-  font-weight: 550;
+  /* font-weight: 550; */
 }
 
 .btn-main-offer:hover {
@@ -141,6 +141,7 @@ nav ul li {
   transition: 0.2s ease-in-out;
   border-color: var(--primary-hover-golden);
   background-color: rgba(201, 185, 185, 0.5);
+  cursor: pointer;
 }
 
 /* ***********************  PARTICLES JS **************** */
@@ -159,6 +160,7 @@ nav ul li {
 }
 
 /************************ ABOUT ME *********************************/
+
 .photo-wrap {
   display: flex;
   justify-content: center;
@@ -347,13 +349,13 @@ nav ul li {
 /************************ FOOTER COMPONENT *********************************/
 .footer {
   background: var(--primary-black);
-  color: var(--primary-dark-grey);
+  color: var(--primary-white);
   padding: 3rem;
 }
 
 .footer a {
   text-decoration: none;
-  color: var(--primary-dark-grey);
+  color: var(--primary-white);
 }
 
 .footer a:hover {

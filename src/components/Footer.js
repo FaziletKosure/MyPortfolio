@@ -47,7 +47,7 @@ const Footer = () => {
           <div className="col-lg-5 col-md-5 col-sm-6 align-items-center">
             <div className="d-flex justify-content-center">
               <FacebookShareButton
-                url={"https://faziletkosure1.medium.com/"}
+                url={"https://faziletkosure1.medium.com"}
                 quote={"FullStack Developer"}
                 hashtag="#javascript"
               >
