@@ -2,7 +2,7 @@ import React from "react";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 // AVATARS IMPORTS
-import avatar1 from "../images/avatars/avatar-1.png";
+import avatar1 from "../images/avatars/denny-wong.jpg";
 import avatar2 from "../images/avatars/avatar-2.png";
 import avatar3 from "../images/avatars/avatar-3.png";
 import avatar4 from "../images/avatars/avatar-4.png";
@@ -20,11 +20,15 @@ const TestimonialsCarousel = () => {
       <>
         <img src={avatar1} alt="John Doe 1" />
         <div className="myCarousel">
-          <h3>John Doe 1</h3>
+          <h3>Denny Wong</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
-            ratione sequi saepe dicta blanditiis, molestias eum excepturi quod
-            fugiat veniam!
+            Fazilet has been amazing in developing Muna.io landing pages.
+            Throughout she has proven her competencies in web development,
+            adding features and connecting different web services to achieve the
+            result we wanted. She is a hard-working, serious, reactive, fast
+            learner, and a good communicator. I will surely rehire her for
+            future work and recommend her work to those looking to get things
+            done! Elegantly and professionally.
           </p>
         </div>
       </>

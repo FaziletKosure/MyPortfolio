@@ -7,7 +7,7 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 const Navbar = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-dark fixed-top">
+    <nav className="navbar navbar-expand-lg  fixed-top">
       <div className="container">
         <Link
           smooth={true}

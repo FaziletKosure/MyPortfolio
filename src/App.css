@@ -19,6 +19,7 @@ body {
 }
 /* ***********************  NAVBAR  **************** */
 nav {
+  background: #0e2940 !important;
   z-index: 2;
 }
 .logo {
@@ -350,7 +351,7 @@ nav ul li {
 .testimonials {
   background-image: url(testimonials-bg.jpg);
   background-size: cover;
-  background-color: var(--primary-black);
+  background-color: rgba(12, 1, 1, 0.4);
   text-align: center;
   padding-bottom: 4rem;
   margin-bottom: 0;
@@ -374,14 +375,14 @@ nav ul li {
   color: var(--primary-white);
   background: transparent;
   margin-top: -6%;
-  width: 54%;
+  width: 57%;
   margin-left: auto;
   margin-right: auto;
   padding-top: 6%;
   padding-bottom: 8%;
   padding-left: 5%;
   padding-right: 5%;
-  height: 17.875rem;
+  height: 20.875rem;
 }
 
 .myCarousel h3 {
@@ -412,7 +413,7 @@ nav ul li {
 
 /************************ FOOTER COMPONENT *********************************/
 .footer {
-  background: var(--primary-black);
+  background: #0e2940 !important;
   color: var(--primary-white);
   padding: 3rem;
 }
