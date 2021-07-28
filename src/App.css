@@ -7,8 +7,8 @@
   --primary-dark-grey: #666666;
   --primary-red: #ef4035;
   --primary-hover-red: #f33501;
-  --primary-hover-golden: #d0bf94;
-  --primary-orange: #f9ab00;
+  --primary-hover-golden: #00bfa5;
+  --primary-orange: #ea80fc;
   --primary-dark: rgb(52, 58, 64);
   --primary-black: #232f5d;
   --primary-blue: #1d2d9c;
@@ -421,7 +421,7 @@ nav ul li {
 }
 
 .contacts h1 {
-  color: var(--primary-orange);
+  color: var(--primary-hover-golden);
   padding: 1.3rem 0;
   text-transform: uppercase;
 }

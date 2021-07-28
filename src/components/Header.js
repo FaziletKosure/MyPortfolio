@@ -18,9 +18,9 @@ const Header = () => {
         <Link
           smooth={true}
           offset={-110}
-          to="services"
+          to="contacts"
           className="btn-main-offer"
-          href="services"
+          href="contacts"
         >
           contact me
         </Link>
