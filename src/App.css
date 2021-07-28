@@ -7,7 +7,8 @@
   --primary-dark-grey: #666666;
   --primary-red: #ef4035;
   --primary-hover-red: #f33501;
-  --primary-hover-golden: #00bfa5;
+  --primary-hover-green: #00bfa5;
+  --primary-hover-golden: #c9bc1f;
   --primary-orange: #ea80fc;
   --primary-dark: rgb(52, 58, 64);
   --primary-black: #232f5d;
@@ -16,6 +17,16 @@
 
 body {
   font-family: " Roboto", sans-serif !important;
+  background-image: url("./bodybackground.jpg") no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+
+.app-container {
+  background-image: url("./bodybackground1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
 }
 /* ***********************  NAVBAR  **************** */
 nav {
@@ -94,7 +105,7 @@ nav ul li {
 .main-info h1 {
   text-align: center;
   letter-spacing: 0.5rem;
-  color: var(--primary-hover-golden);
+  color: var(--primary-hover-green);
   text-transform: uppercase;
   /* background-color: rgba(14, 2, 2, 0.3); */
   font-family: "Lobster", sans-serif !important;
@@ -130,7 +141,7 @@ nav ul li {
   padding: 13px 37px;
   text-decoration: none;
   color: var(--primary-blue);
-  background-color: var(--primary-hover-golden);
+  background-color: var(--primary-hover-green);
   margin: 2rem;
   font-size: 2rem;
   /* font-weight: 550; */
@@ -138,9 +149,9 @@ nav ul li {
 
 .btn-main-offer:hover {
   text-decoration: none;
-  background-color: var(--primary-hover-golden);
+  background-color: var(--primary-hover-green);
   transition: 0.2s ease-in-out;
-  border-color: var(--primary-hover-golden);
+  border-color: var(--primary-hover-green);
   background-color: rgba(201, 185, 185, 0.5);
   cursor: pointer;
 }
@@ -161,7 +172,11 @@ nav ul li {
 }
 
 /************************ ABOUT ME *********************************/
-
+#about {
+  background-image: url(./aboutbackground.jpg);
+  background-size: cover;
+  width: 100%;
+}
 .photo-wrap {
   display: flex;
   justify-content: center;
@@ -172,11 +187,11 @@ nav ul li {
   width: 16rem;
   border-radius: 50%;
   padding: 0.3rem;
-  border: 1px solid var(--primary-hover-golden);
+  border: 1px solid var(--primary-hover-green);
 }
 
 .about-heading {
-  color: var(--primary-hover-golden);
+  color: var(--primary-black);
   text-transform: uppercase;
   text-align: center;
   /* font-family: "Lobster", sans-serif !important; */
@@ -303,7 +318,7 @@ nav ul li {
   height: 1rem;
   border-radius: 50%;
   border: 0.3125rem solid var(--primary-dark);
-  background: var(--primary-orange);
+  background: var(--primary-hover-golden);
   margin-top: 0.625rem;
   z-index: 3;
 }
@@ -317,7 +332,7 @@ nav ul li {
 
 .timeline-content h3 {
   margin-top: 0.3125rem;
-  color: var(--primary-hover-golden);
+  color: var(--primary-dark);
   font-weight: 900;
 }
 
@@ -349,7 +364,7 @@ nav ul li {
 
 /************************ PORTFOLIO *********************************/
 .portfolio-wrapper {
-  background: var(--primary-light-grey);
+  /* background: var(--primary-light-grey); */
   padding: 3rem 0;
 }
 
@@ -358,11 +373,12 @@ nav ul li {
 }
 
 .portfolio-image {
-  width: 16rem;
-  height: 11rem;
-  border: 1px solid var(--primary-orange);
+  width: 20rem;
+  height: 13rem;
+  border: 1px solid var(--primary-hover-golden);
   padding: 0.5rem;
   object-fit: cover;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
 }
 
 .portfolio-image-box {
@@ -376,8 +392,8 @@ nav ul li {
   position: absolute;
   opacity: 0;
   background: var(--primary-black);
-  width: 16rem;
-  height: 11rem;
+  width: 20rem;
+  height: 13rem;
   top: 0;
   border: 1px solid var(--primary-red);
   cursor: pointer;
@@ -418,6 +434,11 @@ nav ul li {
   color: var(--primary-red);
 }
 
+.popupbox {
+  top: 65px !important;
+  bottom: 100px !important;
+}
+
 /*------------ MEDIA ------------------*/
 @media (max-width: 768px) {
   .portfolio-image-popupbox {
@@ -445,9 +466,9 @@ nav ul li {
 
 /************************ TESTIMONIALS *********************************/
 .testimonials {
-  background-image: url(testimonials-bg.jpg);
+  background-image: url(client.jpg);
   background-size: cover;
-  background-color: rgba(12, 1, 1, 0.4);
+  /* background-color: rgba(12, 1, 1, 0.4); */
   text-align: center;
   padding-bottom: 4rem;
   margin-bottom: 0;
@@ -494,10 +515,10 @@ nav ul li {
 }
 
 .myCarousel p {
-  color: var(--primary-grey);
+  color: var(--primary-dark);
 }
 .carousel {
-  background-color: rgba(13, 14, 15, 0.5) !important;
+  /* background-color: rgba(13, 14, 15, 0.5) !important; */
 }
 .carousel .slide img {
   width: 10rem !important;
@@ -517,7 +538,7 @@ nav ul li {
 
 /************************ CONTACTS COMPONENT *********************************/
 .contacts {
-  background: var(--primary-dark);
+  /* background: var(--primary-grey); */
   padding: 3rem 0;
 }
 
@@ -528,7 +549,7 @@ nav ul li {
 }
 
 .contacts p {
-  color: var(--primary-light-grey);
+  color: var(--primary-black);
   font-size: 1.2rem;
 }
 

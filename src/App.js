@@ -13,7 +13,7 @@ import Portfolio from "./components/Portfolio";
 
 function App() {
   return (
-    <>
+    <div className="app-container">
       <Particles
         className="particles-canvas"
         params={{
@@ -44,7 +44,7 @@ function App() {
       <Testimonials />
       <Contacts />
       <Footer />
-    </>
+    </div>
   );
 }
 
