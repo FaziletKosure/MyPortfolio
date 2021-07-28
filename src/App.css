@@ -421,8 +421,9 @@ nav ul li {
 
 /*------------ OVERFLOW BOX ------------------*/
 .portfolio-image-popupbox {
-  width: 45rem;
+  width: 35rem;
   padding: 0 0.5rem;
+  margin-left: 8rem;
 }
 
 .hyper-link {
@@ -438,8 +439,16 @@ nav ul li {
   top: 65px !important;
   bottom: 100px !important;
 }
-
+.popupbox-btn--close {
+  font-weight: bold !important;
+  color: black !important;
+}
 /*------------ MEDIA ------------------*/
+@media (max-width: 1000px) {
+  .portfolio-image-popupbox {
+    margin-left: 0;
+  }
+}
 @media (max-width: 768px) {
   .portfolio-image-popupbox {
     width: 100%;
