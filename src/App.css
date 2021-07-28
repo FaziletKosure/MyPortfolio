@@ -19,7 +19,7 @@ body {
 }
 /* ***********************  NAVBAR  **************** */
 nav {
-  background: #0e2940 !important;
+  background: black !important;
   z-index: 2;
 }
 .logo {
@@ -347,6 +347,102 @@ nav ul li {
   }
 }
 
+/************************ PORTFOLIO *********************************/
+.portfolio-wrapper {
+  background: var(--primary-light-grey);
+  padding: 3rem 0;
+}
+
+.portfolio-wrapper h1 {
+  color: var(--primary-black);
+}
+
+.portfolio-image {
+  width: 16rem;
+  height: 11rem;
+  border: 1px solid var(--primary-orange);
+  padding: 0.5rem;
+  object-fit: cover;
+}
+
+.portfolio-image-box {
+  position: relative;
+  margin: 1rem;
+  object-fit: cover;
+}
+
+/*------------ OVERFLOW BOX ------------------*/
+.overflow {
+  position: absolute;
+  opacity: 0;
+  background: var(--primary-black);
+  width: 16rem;
+  height: 11rem;
+  top: 0;
+  border: 1px solid var(--primary-red);
+  cursor: pointer;
+}
+
+.portfolio-image-box:hover .overflow {
+  opacity: 60%;
+  transition: 0.3s ease-in-out;
+}
+
+.portfolio-icon {
+  position: absolute;
+  opacity: 0;
+  margin-left: -8rem;
+  margin-top: 3.6rem;
+  color: var(--primary-orange);
+  font-size: 1.5rem;
+}
+
+.portfolio-image-box:hover .portfolio-icon {
+  opacity: 70%;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+/*------------ OVERFLOW BOX ------------------*/
+.portfolio-image-popupbox {
+  width: 45rem;
+  padding: 0 0.5rem;
+}
+
+.hyper-link {
+  cursor: pointer;
+  color: var(--primary-orange);
+}
+
+.hyper-link:hover {
+  color: var(--primary-red);
+}
+
+/*------------ MEDIA ------------------*/
+@media (max-width: 768px) {
+  .portfolio-image-popupbox {
+    width: 100%;
+  }
+}
+
+@media (max-height: 570px) {
+  .popupbox-wrapper {
+    height: 100%;
+  }
+  .portfolio-image-popupbox {
+    width: 50%;
+  }
+}
+
+@media (max-height: 280px) {
+  .popupbox-wrapper {
+    height: 90%;
+  }
+  .portfolio-image-popupbox {
+    width: 30%;
+  }
+}
+
 /************************ TESTIMONIALS *********************************/
 .testimonials {
   background-image: url(testimonials-bg.jpg);
@@ -359,9 +455,14 @@ nav ul li {
 }
 
 .testimonials h1 {
-  color: var(--primary-hover-golden);
+  color: var(--primary-black);
   padding: 3rem 0;
   text-transform: uppercase;
+  background-color: rgba(249, 249, 250, 0.5);
+  border-radius: 25px;
+  padding: 0.5rem;
+  width: 30rem;
+  margin: auto;
 }
 
 .testimonials-content {
@@ -520,7 +621,7 @@ textarea.form-control {
 
 /************************ FOOTER COMPONENT *********************************/
 .footer {
-  background: #0e2940 !important;
+  background: black !important;
   color: var(--primary-white);
   padding: 3rem;
 }
