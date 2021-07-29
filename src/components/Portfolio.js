@@ -116,10 +116,10 @@ const Portfolio = () => {
         <a
           className="hyper-link"
           onClick={() =>
-            window.open("https://fazilet-potfolio.netlify.app/", "_blank")
+            window.open("https://fazilet-portfolio.netlify.app/", "_blank")
           }
         >
-          https://fazilet-potfolio.netlify.app/
+          https://fazilet-portfolio.netlify.app/
         </a>
         <br />
         <b>GitHub:</b>{" "}
